@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
   align-items: center;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #333;
+  color: brown;
+  background-image: linear-gradient(to bottom,#373B44, #4286f4);
+}
+#quote-box{
+  height: 425px;
+  width: 650px;
+  border-radius: 20px;
+  background-color: #333;
+  display:flex;
+  flex-direction:column;
+}
+#app-title{
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-top: 10px;
+  text-decoration: underline;
+  color: #6D7E5D;
+}
+#quote-text{
+  font-size: 10;
+  margin: 20px 10px 10px 10px;
+}
+#quote-author{
+  margin-left:10px;
+  margin-right:10px;
+  margin-bottom: 25px;
+  display:flex;
+  justify-content:flex-end;
+  font-size: 20px;
+}
+#tweet-newQuote{
+  margin-left:10px;
+  margin-right:10px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 475px;
+}
+#tweet-quote{
+  background-color: red;
   color: white;
+  padding: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.quote-tag{
+  margin-right: 4px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  background-color: red;
+  color: white;
+  padding: 1em 1.2em;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  margin-left: 455px;
+  border-radius: 5px;
+}
+button:hover{
+  opacity: 0.7;
+}
+#tweet-quote{
+  opacity: 0.7;
 }
